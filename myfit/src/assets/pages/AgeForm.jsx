@@ -30,7 +30,16 @@ export function AgeForm({ ageGroup }) {
           />
         </label>
         <br />
-
+<label>
+          Age:
+          <input
+            type="number"
+            name="Age"
+            value={formData.Age}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
         <label>
           Weight (kg):
           <input
@@ -56,7 +65,7 @@ export function AgeForm({ ageGroup }) {
           Gender:
           <select
             name="Gender"
-            value={formData.activityLevel}
+            value={formData.Gender}
             onChange={handleChange}
           >
             <option value="">Select</option>
@@ -78,18 +87,6 @@ export function AgeForm({ ageGroup }) {
             <option value="low">Low</option>
             <option value="moderate">Moderate</option>
             <option value="high">High</option>
-          </select>
-        </label>
-        <br />
-
-        <label>
-          BMI Category:
-          <select name="BMI category" onChange={handleChange}>
-            <option value="">Category</option>
-            <option value="Underweight">Underweight</option>
-            <option value="Normal weight">Normal weight</option>
-            <option value="Overweight">Overweight</option>
-            <option value="Obese">Obese</option>
           </select>
         </label>
         <br />
